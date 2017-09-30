@@ -1,0 +1,132 @@
+body {
+    background: #000000;
+    color: white;
+}
+
+
+.App {
+    text-align: center;
+    padding: 5%;
+}
+
+.App-title {
+    font-size: 26px;
+}
+
+.search {
+    max-width:360px;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info {
+    margin-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 26px;
+
+}
+
+.profile-followers, .profile-genres {
+    font-size: 18px;
+}
+
+/*Gallery*/
+
+.tracks {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.track {
+    display: flex;
+    width: 220px;
+    height:220px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.track-img {
+    width:220px;
+    height:220px;
+    border: 3px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.track-text {
+    background-color: black;
+    color: white;
+    opacity:0.75;
+    width: 214px;
+    margin-left:3px;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    padding: 10px;
+    font-size:12px;
+}
+
+.track-play {
+    position: absolute;
+    width:220px;
+    height: 220px;
+
+}
+
+.track-play-inner {
+    position: absolute;
+    text-align: center;
+    font-size:25px;
+    background-color: black;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    padding-top: 13px;
+    margin-left: 80px;
+    margin-top: 80px;
+    opacity:0;
+}
+
+.track-play-inner:hover {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    opacity: 0.8;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
